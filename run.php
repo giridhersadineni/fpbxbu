@@ -5,7 +5,7 @@
  * Date: 8/21/17
  * Time: 4:26 PM
  */
-$result = popen("ls","r");
+$result = popen("/bin/ls","r");
 echo $result;
 
 
