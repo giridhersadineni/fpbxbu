@@ -5,8 +5,11 @@
  * Date: 8/21/17
  * Time: 4:26 PM
  */
-$result = popen("/bin/ls","r");
-echo $result;
+require_once ("Console_GetoptPlus");
+
+$cmd ="ls -a";
+$out=shell_exec($cmd);
+echo "<pre> ".$cmd."</pre>";
 
 
 ?>
